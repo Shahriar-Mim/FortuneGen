@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fortune Generator</title>
+	<style type="text/css">
+	body{
+        background-image:url("paper.jpg");
+   		background-position: center; 
+        }
+		#fortu{
+			font-size: 20px; 
+			font-family: Garamond; 
+			font-weight: bold; 
+			position: absolute;
+			top: 20%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			text-align: center; 
+			border: 3px solid blue;
+ 			padding: 20px 40px;
+ 			box-sizing: border-box;
+			
+		}
+		#welcome{
+			font-style: italic;
+			font-size: 20px; 
+			font-family: Tahoma; 
+			text-align: center; 
+		}
+		}
+	</style>
+</head>
+<body>
+	<div id="welcome"> 
+		<h3>Welcome to Fortune Generator</h3>
+	</div>
+<div id="fortu">
+<script type="text/javascript">
+	var arr = new Array(5);
+	arr[0]="The greatest glory in living lies not in never falling, but in rising every time we fall. -Nelson Mandela"
+	arr[1] = "The way to get started is to quit talking and begin doing. -Walt Disney"
+	arr[2]="Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking. -Steve Jobs"
+	arr[3]="If life were predictable it would cease to be life, and be without flavor. -Eleanor Roosevelt"
+	arr[4] = "Life is what happens when you're busy making other plans. -John Lennon"
+	var random = Math.floor(Math.random() * arr.length);
+	
+	document.write(arr[random]);
+</script>
+</div>
+</body>
+</html>
